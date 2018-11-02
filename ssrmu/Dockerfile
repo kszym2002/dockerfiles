@@ -1,5 +1,6 @@
 FROM python:3.7.1-alpine3.8
-MAINTAINER FAN VINGA<fanalcest@gmail.com>
+MAINTAINER FAN VINGA<fanalcest@gmail.com> \
+           EasonSummer<kszym2002@gmail.com>
 
 RUN  apk --no-cache add \
                         curl \
@@ -23,7 +24,7 @@ RUN  apk --no-cache add \
                         linux-headers         && \
      ln -s /usr/bin/python3 /usr/bin/python   && \
      ln -s /usr/bin/pip3    /usr/bin/pip      && \
-     t clone -b manyuser https://github.com/SakuraSa233/shadowsocks.git "/root/shadowsocks" --depth 1 && \
+     git clone -b manyuser https://github.com/ssrpanel/shadowsocksr.git "/root/shadowsocks" --depth 1 && \
      cd  /root/shadowsocks                    && \
      pip install -r requirements.txt          && \
      rm -rf ~/.cache && touch /etc/hosts.deny && \
