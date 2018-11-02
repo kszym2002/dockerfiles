@@ -1,4 +1,4 @@
-FROM python:3.7.1-alpine3.8
+FROM alpine:3.8
 MAINTAINER FAN VINGA<fanalcest@gmail.com> \
            EasonSummer<kszym2002@gmail.com>
 
