@@ -4,7 +4,6 @@ MAINTAINER FAN VINGA<fanalcest@gmail.com> \
 
 RUN  apk --no-cache add \
                         curl \
-                        python3-dev \
                         libsodium-dev \
                         openssl-dev \
                         udns-dev \
@@ -17,7 +16,6 @@ RUN  apk --no-cache add \
                         git \
                         tar \
                         make \
-                        py3-pip \
                         autoconf \
                         automake \
                         build-base \
