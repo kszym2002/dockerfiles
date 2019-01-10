@@ -26,6 +26,7 @@ RUN  apk --no-cache add \
 COPY ./shadowsocks  /root/shadowsocks
 
 RUN  cd  /root/shadowsocks                    && \
+     pip install cymysql                     && \
      pip install -r requestment.txt         && \
      rm -rf ~/.cache && touch /etc/hosts.deny && \
      apk del --purge .build-deps
