@@ -1,0 +1,17 @@
+{
+    "mode": "db",
+    "dbconfig": {
+        "host": "",
+        "user": "",
+        "passwd": "",
+        "port": "",
+        "database": "",
+        "rate": 0,
+        "NodeId": 0,
+        "SyncTime": 3000000000
+    },
+    "shadowsocks_options": {
+        "tcp_timeout": 0,
+        "udp_timeout": 0
+    }
+}
