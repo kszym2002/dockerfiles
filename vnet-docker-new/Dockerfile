@@ -1,10 +1,9 @@
 FROM golang as builder
 RUN apt update && apt install git -y 
-RUN git clone https://github.com/rc452860/vnet.git /usr/local/go/src/github.com/rc452860/vnet
-RUN  cd  /usr/local/go/src/github.com/rc452860/vnet/cmd/server/ && \
-    go build --ldflags '-linkmode external -extldflags "-static"'
+RUN go get -u -d github.com/rc452860/vnet/...
+RUN  go build $gopath/rc452860/vnet/cmd/server/server.go --ldflags '-linkmode external -extldflags "-static"'
 
-FROM alpine:3.8 
+FROM alpine:3.9 
 COPY --from=builder /usr/local/go/src/github.com/rc452860/vnet/cmd/server/ /vnet
 WORKDIR /vnet
 
