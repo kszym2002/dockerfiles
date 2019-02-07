@@ -1,6 +1,6 @@
-FROM alpine:3.9
-COPY ./server /vnet/server
-RUN chmod +x /vnet/server
+FROM frolvlad/alpine-glibc
+COPY ./vnet /vnet
+RUN chmod +x /vnet/vnet
 WORKDIR /vnet
 
-CMD ./server
+CMD ./vnet
