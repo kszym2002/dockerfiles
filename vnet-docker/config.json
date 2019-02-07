@@ -4,21 +4,15 @@
         "host": "",
         "user": "",
         "passwd": "",
-        "port": "",
+        "port": "3306",
         "database": "",
-        "rate": -1,
+        "rate": 1,
         "NodeId": 0,
-        "sync_time": 0,
-        "online_sync_time": 0
+        "SyncTime": 3000,
+        "OnlineSyncTime": 60000
     },
     "shadowsocks_options": {
-        "connect_timeout": 3000,
-        "tcp_switch": "true",
-        "udp_switch": "true"
-    },
-    "dns_options": {
-        "dns1": "8.8.8.8:53",
-        "dns2": "8.8.4.4:53",
-        "ipv4_prefer": false
+        "tcp_timeout": 0,
+        "udp_timeout": 0
     }
 }
