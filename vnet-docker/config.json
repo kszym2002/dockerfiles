@@ -1,18 +1,25 @@
 {
     "mode": "db",
     "dbconfig": {
-        "host": "",
-        "user": "",
-        "passwd": "",
+        "host": "v2v.boom233.com",
+        "user": "ssrpanel",
+        "passwd": "WCm6mKm9Acc3",
         "port": "3306",
-        "database": "",
-        "rate": 1,
-        "NodeId": 0,
-        "SyncTime": 3000,
-        "OnlineSyncTime": 60000
+        "database": "ssrpanel",
+        "rate": 0.01,
+        "NodeId": 39,
+        "sync_time": 3000,
+        "online_sync_time": 60000,
+        "level": 0
     },
     "shadowsocks_options": {
-        "tcp_timeout": 0,
-        "udp_timeout": 0
+        "connect_timeout": 0,
+        "tcp_switch": "",
+        "udp_switch": ""
+    },
+    "dns_options": {
+        "dns1": "",
+        "dns2": "",
+        "ipv4_prefer": false
     }
 }
