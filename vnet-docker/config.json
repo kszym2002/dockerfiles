@@ -4,12 +4,12 @@
         "host": "",
         "user": "",
         "passwd": "",
-        "port": "",
+        "port": "3306",
         "database": "",
-        "rate": -1,
+        "rate": 1,
         "NodeId": 0,
-        "sync_time": 0,
-        "online_sync_time": 0,
+        "sync_time": 3000,
+        "online_sync_time": 60000,
         "level": -1
     },
     "shadowsocks_options": {
