@@ -15,7 +15,7 @@ RUN apk upgrade --update \
 RUN ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
 && echo ${TZ} > /etc/timezone 
 
-COPY /shadowsocks /root/shadowsocks
+COPY ./shadowsocks /root/shadowsocks
 WORKDIR /root/shadowsocks
 
 RUN  apk --no-cache add \
