@@ -15,7 +15,7 @@ RUN apk upgrade --update \
 RUN ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
 && echo ${TZ} > /etc/timezone 
 
-WORKDIR /root/shadowsocksr 
+WORKDIR /root/shadowsocks
 
 RUN  apk --no-cache add \
                         curl \
@@ -42,7 +42,8 @@ RUN  apk --no-cache add \
      ln -s /usr/bin/python3 /usr/bin/python   && \
      ln -s /usr/bin/pip3    /usr/bin/pip      && \
      cp  /usr/bin/envsubst  /usr/local/bin/   && \
-     git clone https://github.com/LEE-Blog/shadowsocksr.git && \
+     mkdir /root/shadowsocks                 && \
+     git clone https://github.com/LEE-Blog/shadowsocks.git /root/shadowsocks && \
      pip install --upgrade pip                && \
      pip install cymysql                      && \        
      rm -rf ~/.cache && touch /etc/hosts.deny && \
