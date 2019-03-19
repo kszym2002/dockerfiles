@@ -42,7 +42,6 @@ RUN  apk --no-cache add \
      ln -s /usr/bin/python3 /usr/bin/python   && \
      ln -s /usr/bin/pip3    /usr/bin/pip      && \
      cp  /usr/bin/envsubst  /usr/local/bin/   && \
-     mkdir /root/shadowsocks                 && \
      git clone https://github.com/LEE-Blog/shadowsocksr.git /root/shadowsocks && \
      pip install --upgrade pip                && \
      pip install cymysql                      && \        
